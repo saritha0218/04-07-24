@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 500px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 20px;
+            border: 2px solid black;
+            padding-left: 50px;
+            margin-left: 400px;
+            padding-bottom: 2px;  
+        }
+
+        input:focus{
+            outline: 0;
+            border: 2px solid blue;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: 0px 10px 10px lightblue ;  
+        }
+        
+        input:focus + ion-icon{
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #ion{
+            border: 2px solid black;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 42px;
+            width: 50px;
+        }
+
+       #ion1{
+        margin-left: 410px;
+        font-size: 40px;
+        position: absolute;
+        margin-top: 5px;
+       }
+
+        #in{
+            display: flex;
+            margin: 70px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="in">
+        <ion-icon id="ion1" name="search-outline"></ion-icon>
+       <input type="text" placeholder="Search" > 
+       <ion-icon id="ion" name="search-outline"></ion-icon>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
