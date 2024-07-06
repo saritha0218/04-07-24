@@ -11,22 +11,26 @@
             font-weight: bold;
             font-size: 20px;
             border: 2px solid black;
-            padding-left: 50px;
             margin-left: 400px;
             padding-bottom: 2px;  
         }
 
         input:focus{
             outline: 0;
+            padding-left: 60px;
             border: 2px solid blue;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             box-shadow: 0px 10px 10px lightblue ;  
         }
         
-        input:focus + ion-icon{
+        input:focus ~ ion-icon{
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
+        }
+
+        input:focus + #ion1 {
+            display: inline-block;
         }
 
         #ion{
@@ -42,6 +46,7 @@
         font-size: 40px;
         position: absolute;
         margin-top: 5px;
+        display: none;
        }
 
         #in{
@@ -53,8 +58,8 @@
 <body>
 
     <div id="in">
-        <ion-icon id="ion1" name="search-outline"></ion-icon>
        <input type="text" placeholder="Search" > 
+       <ion-icon id="ion1" name="search-outline"></ion-icon>
        <ion-icon id="ion" name="search-outline"></ion-icon>
     </div>
 
